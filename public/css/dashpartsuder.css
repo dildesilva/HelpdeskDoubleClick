@@ -1,0 +1,357 @@
+.home-contentDshabordadmin {
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.home-contentDshabordadminBB {
+    padding: 20px;
+    background-color: #dfdede;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Flexbox Rows */
+.row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    max-height: 400px;
+    min-height: 50px;
+    min-width: 300px;
+    margin-top: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.full-width {
+    flex: 100%;
+}
+
+/* Card Titles */
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+/* Metrics */
+.card .metric {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--success-color);
+}
+
+/* Activity List */
+.activity-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e3e6f0;
+    font-size: 12px;
+    color: #5a5c69;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-item .time {
+    color: #858796;
+    font-size: 0.9em;
+}
+
+/* Charts */
+canvas {
+    width: 100% !important;
+    max-height: 300px;
+}
+
+.greenCard {
+    border-left: 8px solid rgb(77, 247, 77);
+    /* Green line on the left */
+    background: rgba(0, 255, 34, 0.192);
+
+}
+
+.yellowCard {
+    border-left: 8px solid rgb(255, 174, 0);
+    /* Green line on the left */
+    background: rgba(255, 174, 0, 0.192);
+}
+
+.redCard {
+
+    border-left: 8px solid rgb(228, 3, 3);
+    background: rgb(228, 3, 3, 0.192);
+}
+
+.bluCard {
+
+    border-left: 8px solid rgb(3, 74, 228);
+    background: rgb(3, 74, 228, 0.192);
+}
+
+.orangeCard {
+
+    border-left: 8px solid rgb(255, 97, 58);
+    background: rgb(255, 97, 58, 0.192);
+}
+
+.whiteCraeddark {
+
+    border-left: 8px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.192);
+}
+
+.tableCArt {
+    overflow-y: auto;
+    height: 90%;
+}
+
+/* Unique Class for Table Styling */
+.ticket-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 10px;
+    border: 1px solid #ddd;
+}
+
+.ticket-table th {
+    background-color: #4e73df;
+    /* Header color */
+    color: #fff;
+}
+
+.ticket-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Light gray background for even rows */
+}
+
+.ticket-table tr:hover {
+    background-color: #f6c23e;
+    /* Hover effect */
+}
+
+.ticket-table td {
+    color: #555;
+}
+
+#ticketCountside {
+    /* background: red; */
+
+    width: 15px;
+    height: 15px;
+    /* padding: auto; */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    .ticket-table th,
+    .ticket-table td {
+        padding: 8px;
+    }
+}
+
+/* balde to thishhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
+.tiketAdminmain {
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.tiketAdminmainBB {
+    padding: 20px;
+    background-color: #dfdede;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Root Variables for color palette */
+:root {
+    --primary-color: #1D3557;
+    --secondary-color: #457B9D;
+    --accent-color: #A8DADC;
+    --background-color: #F1FAEE;
+    --text-color: #333333;
+    --button-color: #FF6F61;
+    --button-hover-color: #FF4B44;
+    --table-header-bg: #bdf8fa;
+    --table-row-hover-bg: #F1FAEE;
+}
+
+
+/* Table styles */
+.engDshTiketHomeTable table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.engDshTiketHomeTable th,
+.engDshTiketHomeTable td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.engDshTiketHomeTable th {
+    position: sticky;
+    top: 0;
+    background-color: var(--table-header-bg);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 10;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.engDshTiketHomeTable td {
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Hover effect for table rows */
+.engDshTiketHomeTable tr:hover {
+    background-color: var(--table-row-hover-bg);
+}
+
+/* Empty State Message */
+.engDshTiketHomeTable tr td[colspan="7"] {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    padding: 30px;
+}
+
+/* Title Styles */
+.engDshTiketHomeTable h1 {
+    font-size: 36px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Button Styles */
+.redbutton {
+    background-color: var(--button-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.redbutton:hover {
+    background-color: var(--button-hover-color);
+    transform: translateY(-2px);
+}
+
+.redbutton:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--button-hover-color);
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+
+/* Form Container */
+form {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .engDshTiketHomeTable {
+        margin: 10px 0;
+    }
+
+    .engDshTiketHomeTable table {
+        font-size: 12px;
+    }
+
+    .engDshTiketHomeTable th,
+    .engDshTiketHomeTable td {
+        padding: 10px;
+    }
+
+    .redbutton {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .engDshTiketHomeTable h1 {
+        font-size: 28px;
+    }
+}

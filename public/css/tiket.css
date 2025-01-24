@@ -1,0 +1,150 @@
+/* Ticket Form Section */
+.headsectionTikect {
+    width: 90%;
+    /* Increased width for a wider form */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.295);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    height: auto;
+    /* Adjust height according to content */
+    margin: auto;
+}
+
+.headsectionTikect:hover {
+    transform: translateY(-3px);
+    /* Subtle hover effect */
+}
+
+/* Heading */
+.headsectionTikect h1 {
+    font-size: 20px;
+    /* Larger heading */
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.headsectionTikect table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.headsectionTikect table td {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Select and Textarea Styling */
+.headsectionTikect table td select,
+.headsectionTikect table td textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    height: 40px;
+    /* Increased height */
+}
+
+.headsectionTikect table td select:hover,
+.headsectionTikect table td textarea:hover {
+    background-color: #eaeaea;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headsectionTikect table td select:focus,
+.headsectionTikect table td textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Buttons Section */
+.buttonsCLEARANDENNTERtikects {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* Added space */
+}
+
+.buttonsCLEARANDENNTERtikects input {
+    padding: 12px 18px;
+    /* Increased padding */
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 48%;
+    /* Adjusted to balance */
+}
+
+.redbutton {
+    background-color: #e74c3c;
+    color: white;
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
+}
+
+.redbutton:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 18px rgba(231, 76, 60, 0.3);
+}
+
+.greenbutton {
+    background-color: #2ecc71;
+    color: white;
+    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.2);
+}
+
+.greenbutton:hover {
+    background-color: #27ae60;
+    box-shadow: 0 6px 18px rgba(46, 204, 113, 0.3);
+}
+
+/* Ticket Lists Section */
+.headsectionLISTS {
+    width: 600px;
+    /* Increased width for wider list */
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 300px;
+    /* Increased height for list */
+    overflow-y: auto;
+}
+
+.headsectionLISTSindiv table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.headsectionLISTSindiv table th,
+.headsectionLISTSindiv table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.headsectionLISTSindiv table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.headsectionLISTSindiv table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.headsectionLISTSindiv table tr:hover {
+    background-color: #f1f1f1;
+}

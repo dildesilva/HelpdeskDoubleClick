@@ -1,0 +1,244 @@
+.home-content {
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.home-content-bukket {
+    padding: 20px;
+    background-color: #dfdede;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Style the form container */
+.simple-delete-form {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.simple-delete-form:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style the delete button */
+.simple-delete-btn {
+    background-color: #e74c3c;
+    /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.simple-delete-btn:hover {
+    background-color: #c0392b;
+    /* Darker red */
+    transform: scale(1.05);
+    /* Slightly enlarge the button */
+}
+
+.simple-delete-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.8);
+}
+
+/* Global styles (headings remain default size) */
+h1,
+.section-title {
+    font-size: 1.5rem;
+    /* Keep headings larger */
+    color: #343A40;
+    margin-bottom: 20px;
+}
+
+/* Ticket Filter Form Styles - Single Row */
+.ticket-filter {
+    background-color: #ff8282;
+    /* White background for the form */
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.404);
+    max-width: 1000px;
+    z-index: 100;
+}
+
+.ticket-filter form {
+    display: flex;
+    gap: 15px;
+    /* Adds space between the input fields and button */
+    justify-content: flex-start;
+    /* Aligns items to the left */
+    flex-wrap: wrap;
+    /* Allows elements to wrap on small screens */
+}
+
+.ticket-filter label {
+    font-weight: bold;
+    color: #343A40;
+    white-space: nowrap;
+    /* Prevents label from breaking */
+    font-size: 12px;
+    /* Set label font size to 12px */
+}
+
+.ticket-filter input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 200px;
+    /* Fixed width for input fields */
+    transition: border-color 0.3s;
+}
+
+.ticket-filter input[type="text"]:focus {
+    border-color: #007BFF;
+}
+
+.ticket-filter button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+    /* Align the button to the right */
+}
+
+.ticket-filter button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .ticket-filter form {
+        flex-direction: column;
+        /* Stack elements vertically on small screens */
+        gap: 10px;
+        /* Reduce space between form elements */
+    }
+
+    .ticket-filter input[type="text"] {
+        width: 100%;
+        /* Make the inputs full-width on mobile */
+    }
+
+    .ticket-filter button {
+        width: 100%;
+        /* Make the button full-width on mobile */
+        margin-top: 10px;
+        /* Add margin to the top of the button */
+    }
+}
+
+/* Ticket Section Container */
+.ticket-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 20px;
+}
+
+/* Ticket Section Styles */
+.ticket-section {
+    z-index: 100;
+
+    background-color: #dadada;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.486);
+}
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.ticket-table tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+.ticket-table tr:hover {
+    background-color: #e9ecef;
+}
+
+.ticket-table td {
+    font-size: 12px;
+    /* Set font size for table data */
+    color: #343A40;
+}
+
+/* Specific Styles for Ticket Sections */
+.open-tickets-section .section-title {
+    color: #ff0000;
+}
+
+.processing-tickets-section .section-title {
+    color: #28A745;
+}
+
+.token-cell,
+.company-cell,
+.subject-cell,
+.state-cell,
+.duration-cell,
+.branch-cell {
+    vertical-align: middle;
+}
+
+.token-cell {
+    width: 15%;
+}
+
+.company-cell,
+.branch-cell {
+    width: 25%;
+}
+
+.subject-cell {
+    width: 30%;
+}
+
+.state-cell,
+.duration-cell {
+    width: 15%;
+}

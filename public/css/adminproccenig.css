@@ -1,0 +1,283 @@
+.home-content-adminprocecc {
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.home-content-adminproceccBB {
+    padding: 20px;
+    background-color: #dfdede;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Root-level styles for color scheme and typography */
+:root {
+    --primary-color: #0000ff;
+    /* Primary color (Blue) */
+    --secondary-color: #333;
+    /* Dark gray for text */
+    --light-gray: #f4f4f4;
+    /* Light background color */
+    --bg-color: #c2c2c2;
+    /* Table background color */
+    --hover-bg: #d1f0d1;
+    /* Hover background color */
+    --accent-color: #000000;
+    /* Accent color for links and buttons */
+    --border-color: #ddd;
+    /* Border color */
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    /* Shadow color */
+    --font-family: 'Roboto', sans-serif;
+    /* Modern font */
+}
+
+/* Styling for select box */
+select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+    appearance: none;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #e9f7fe;
+    /* Light blue background when focused */
+}
+
+/* Styling for input box */
+input[type="text"] {
+    width: 60%;
+    padding: 8px 12px;
+    font-size: 10px;
+    border: 1px solid #707070;
+    background-color: #707070;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    color: yellow;
+    border-color: var(--primary-color);
+    background-color: #707070;
+}
+
+/* Button Styles */
+.grebutton {
+    background-color: rgb(60, 255, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    width: 20%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.clrbutton {
+    background-color: rgb(0, 38, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    width: 20%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.grebutton:hover {
+    background-color: green;
+    transform: translateY(-2px);
+}
+
+/* Blue button styles */
+.redbutton {
+    background-color: var(--primary-color);
+    /* Blue button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.redbutton:hover {
+    background-color: darkblue;
+    transform: translateY(-2px);
+}
+
+.redbutton:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Header */
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Table Styles */
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.7rem;
+}
+
+.ticket-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Row Hover Effects */
+.ticket-table tr:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Column-specific styling */
+.ticket-table .ticket-tablebnum {
+    width: 120px;
+    text-align: center;
+}
+
+.ticket-table .ticket-tablebigtaxt {
+    width: 250px;
+}
+
+/* Subject Description */
+.subjectdescol {
+    word-wrap: break-word;
+    max-width: 350px;
+}
+
+/* Scrollable content */
+.nameTupadetengpage1 {
+    width: 100%;
+    max-width: 250px;
+    height: 100px;
+    font-size: 9px;
+    overflow: auto;
+    text-align: left;
+    background-color: #2c2c2c;
+    z-index: 1;
+    color: white;
+    padding: 5px;
+    white-space: normal;
+    display: block;
+    transition: 0.5s;
+}
+
+/* Style the scrollbar */
+.nameTupadetengpage1::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.nameTupadetengpage1::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.nameTupadetengpage1::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.nameTupadetengpage1::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.nameTupadetengpage1:hover {
+    position: relative;
+    transform: scale(1.2);
+    z-index: 9999;
+}
+
+/* Action buttons for Edit (if needed) */
+.ticket-table td[colspan="2"] {
+    text-align: center;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.ticket-table td[colspan="2"] .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-table td[colspan="2"] .btn:hover {
+    background-color: #45a049;
+}
+
+.ticket-table td[colspan="2"] .btn:focus {
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px 3px rgba(76, 175, 80, 0.2);
+}
+
+.tdinputfromupdate {
+    display: flex;
+}
+
+/* Responsive Design: Mobile/Tablet View */
+@media (max-width: 768px) {
+
+    .ticket-table td,
+    .ticket-table th {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+    }
+
+    .ticket-table select {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .ticket-table td[rowspan="2"] {
+        max-width: 180px;
+    }
+
+    /* Add horizontal scrolling for tables */
+    .ticket-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

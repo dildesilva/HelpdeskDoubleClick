@@ -1,0 +1,189 @@
+.dashbordEngcssmain {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(219, 197, 197); */
+    padding-top: 60px;
+    margin: auto;
+}
+
+/* Section Styling */
+section.dashboard {
+    padding: 20px;
+    background-color: #d1d0d0;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Flexbox Rows */
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    max-height: 400px;
+    min-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.full-width {
+    flex: 100%;
+}
+
+/* Card Titles */
+.card h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Metrics */
+.card .metric {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--success-color);
+}
+
+/* Activity List */
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e3e6f0;
+    font-size: 1em;
+    color: #5a5c69;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-item .time {
+    color: #858796;
+    font-size: 0.9em;
+}
+
+/* Charts */
+canvas {
+    width: 100% !important;
+    max-height: 350px;
+}
+
+.greenCard {
+    border-left: 8px solid rgb(77, 247, 77);
+    /* Green line on the left */
+    background: rgba(0, 255, 34, 0.192);
+
+}
+
+.yellowCard {
+    border-left: 8px solid rgb(255, 174, 0);
+    /* Green line on the left */
+    background: rgba(255, 174, 0, 0.192);
+}
+
+.redCard {
+
+    border-left: 8px solid rgb(228, 3, 3);
+    background: rgb(228, 3, 3, 0.192);
+}
+
+.bluCard {
+
+    border-left: 8px solid rgb(3, 74, 228);
+    background: rgb(3, 74, 228, 0.192);
+}
+
+.orangeCard {
+
+    border-left: 8px solid rgb(255, 97, 58);
+    background: rgb(255, 97, 58, 0.192);
+}
+
+.whiteCraeddark {
+
+    border-left: 8px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.192);
+}
+
+.tableCArt {
+    overflow-y: auto;
+    height: 90%;
+}
+
+/* Unique Class for Table Styling */
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.ticket-table th {
+    background-color: #4e73df;
+    /* Header color */
+    color: #fff;
+}
+
+.ticket-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Light gray background for even rows */
+}
+
+.ticket-table tr:hover {
+    background-color: #f6c23e;
+    /* Hover effect */
+}
+
+.ticket-table td {
+    color: #555;
+}
+
+#ticketCountside {
+    /* background: red; */
+
+    width: 15px;
+    height: 15px;
+    /* padding: auto; */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    .ticket-table th,
+    .ticket-table td {
+        padding: 8px;
+    }
+}

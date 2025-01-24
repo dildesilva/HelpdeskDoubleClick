@@ -1,0 +1,267 @@
+/* Google Font Roboto CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    /* Set default font size to 12px */
+    color: #333333;
+    /* Set default text color to a dark shade */
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 180px;
+    background-color: #ffffff;
+    /* Set sidebar background to white */
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active {
+    width: 60px;
+}
+
+.sidebar .logo-details {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo-details img {
+    width: 70%;
+    margin: auto;
+}
+
+.sidebar .nav-links {
+    margin-top: 10px;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+}
+
+.sidebar .nav-links li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a.active {
+    background: #cccccc;
+    /* Set active link background to light gray */
+}
+
+.sidebar .nav-links li a:hover {
+    background: #b7b7b7;
+    /* Set hover link background to medium gray */
+}
+
+.sidebar .nav-links li i {
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    /* Set icon color to black */
+}
+
+.sidebar .nav-links li a .links_name {
+    color: #000000;
+    /* Set link name color to black */
+    font-size: 12px;
+    /* Set font size of links_name to 12px */
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.sidebar .nav-links .log_out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.home-section {
+    background-size: cover;
+    position: relative;
+    background: #ffffff;
+    /* Set home section background to white */
+    min-height: 100vh;
+    width: calc(100% - 180px);
+    left: 180px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active~.home-section {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.home-section nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: #ffffff;
+    /* Set navigation background to white */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 180px);
+    left: 180px;
+    z-index: 100;
+    padding: 0 20px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active~.home-section nav {
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+.home-section nav .sidebar-button {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* Set font size of sidebar-button to 12px */
+    font-weight: 500;
+}
+
+nav .sidebar-button i {
+    font-size: 18px;
+    /* Adjust icon size if needed */
+    margin-right: 10px;
+}
+
+.home-section nav .profile-details {
+    display: flex;
+    align-items: center;
+    background: #8a9ff3;
+    /* Set profile details background to light blue */
+    border: 2px solid #EFEFEF;
+    /* Set border color to light gray */
+    border-radius: 6px;
+    height: 40px;
+    min-width: 190px;
+    padding: 0 15px 0 2px;
+}
+
+nav .profile-details img {
+    height: 30px;
+    width: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+nav .profile-details .admin_name {
+    font-size: 12px;
+    /* Set font size of admin_name to 12px */
+    font-weight: 500;
+    color: #333333;
+    /* Set admin name color to dark gray */
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+nav .profile-details i {
+    font-size: 20px;
+    /* Adjust icon size */
+    color: #333333;
+    /* Set icon color to dark gray */
+}
+
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar.active {
+        width: 220px;
+    }
+
+    .home-section {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+    .sidebar.active~.home-section {
+        left: 220px;
+        width: calc(100% - 220px);
+        overflow: hidden;
+    }
+
+    .home-section nav {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+    .sidebar.active~.home-section nav {
+        width: calc(100% - 220px);
+        left: 220px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    nav .sidebar-button .dashboard,
+    nav .profile-details .admin_name,
+    nav .profile-details i {
+        display: none;
+    }
+
+    .home-section nav .profile-details {
+        height: 50px;
+        min-width: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .overview-boxes .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .sidebar.active~.home-section nav .profile-details {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 0;
+    }
+
+    .sidebar.active {
+        width: 60px;
+    }
+
+    .home-section {
+        width: 100%;
+        left: 0;
+    }
+
+    .sidebar.active~.home-section {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    .home-section nav {
+        width: 100%;
+        left: 0;
+    }
+
+    .sidebar.active~.home-section nav {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+}

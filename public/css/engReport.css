@@ -1,0 +1,152 @@
+
+.doneTiketmaindev {
+    width: 100%;
+    height: 100vh;
+    /* Full viewport height */
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: flex-start;
+    /* Align content to the top */
+    background-color: #f4f4f4;
+    /* Light background for the page */
+}
+.download-report-btn {
+    background-color: #f3db00; /* Green background */
+    color: rgb(255, 0, 0);              /* White text */
+    padding: 5px 5px;        /* Top and bottom padding: 10px, left and right: 20px */
+    border: none;              /* Remove default border */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 12px;           /* Font size */
+    cursor: pointer;          /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.download-report-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+.doneTiketmaindev-2 {
+    padding: 20px;
+    background-color: #d1d0d0;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+
+}
+.containerReport {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #2a3d66;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h2 {
+    color: #2a3d66;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #62cf65;
+    color: white;
+    font-size: 1.1rem;
+}
+td {
+    background-color: #f9f9f9;
+}
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.company-header {
+    background-color: #2a3d66;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.company-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+}
+.company-table td {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+.company-table td:first-child {
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .doneTiketmaindev {
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .doneTiketmaindev-2 {
+        /* padding: 10px; */
+        width: 100%;
+        height: calc(100vh - 50px)
+    }
+
+    .containerReport {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .download-report-btn {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .company-header {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+}

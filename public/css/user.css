@@ -1,0 +1,237 @@
+/* Reset Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profilepiceuser img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* Main Container */
+.userdashmain {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.mainonelesft {
+    width: 220px;
+    /* Fixed sidebar width */
+    height: 100%;
+    background-color: #071b30;
+    /* Muted dark blue-gray */
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.473);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    /* Sidebar stays fixed on scroll */
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+}
+
+/* Profile Image Section */
+.profilepiceuser {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profilepiceuserimg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: #e2e2e2;
+    /* Light grey background for profile image */
+    border: 3px solid #3498db;
+    /* Blue border */
+    transition: transform 0.3s ease;
+    margin: auto;
+}
+
+.profilepiceuserimg:hover {
+    transform: scale(1.1);
+    /* Subtle zoom effect */
+}
+
+/* Username */
+.profilepiceusername {
+    color: white;
+    font-size: 12px;
+    /* Smaller font size */
+    /* font-weight: bold; */
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+/* Navigation */
+.profiledenav {
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+
+.profiledenav ul li {
+
+    position: relative;
+    list-style: none;
+    height: 50px;
+    text-align: center;
+
+    text-align: center;
+    background-color: #34495e;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profiledenav ul li:hover {
+    background-color: #16a085;
+    /* Green color on hover */
+    transform: scale(1.05);
+}
+
+.profiledenav ul li a {
+
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+/* Main Content Area */
+.mainoneRiht {
+    margin-left: 220px;
+    /* Space for sidebar */
+    width: calc(100% - 220px);
+    /* Subtract sidebar width */
+    padding: 30px;
+    background-color: #d0d2d3;
+    /* Light background for content */
+    overflow-y: auto;
+}
+
+/* Edit Ticket Section */
+.Edittikectuser {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.Edittikectuser h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 18px;
+    /* Smaller font size */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.Edittikectuser table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.Edittikectuser table th,
+.Edittikectuser table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.Edittikectuser table th {
+    background-color: #34495e;
+    color: white;
+}
+
+.Edittikectuser table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.profiledenav li i{
+    display: none;
+}
+@media (max-width: 768px) {
+    /* Collapsible Sidebar */
+    .mainonelesft {
+        width: 70px;
+        padding: 10px;
+        overflow: hidden;
+        /* transition: width 0.3s ease-in-out; */
+    }
+
+   
+
+    /* Hide Text in Sidebar */
+    /* .profilepiceusername, */
+    .profiledenav ul li a {
+        /* display: none; */
+        font-size: 0px;
+    }
+    .profiledenav ul li i{
+        display: block;
+        /* margin-left: 20px; */
+    }
+
+    .mainonelesft:hover 
+    .mainonelesft:hover {
+        display: none;
+    }
+
+    /* Adjust Main Content */
+    .mainoneRiht {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        padding: 15px;
+    }
+
+    /* Profile Image Adjustments */
+    .profilepiceuserimg {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Navigation Icons Only */
+    .profiledenav ul li {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profiledenav ul li a {
+        padding: 10px;
+    }
+
+    /* Make Tables Scrollable */
+    .Edittikectuser table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Reduce Font Sizes */
+    .Edittikectuser h1 {
+        font-size: 16px;
+    }
+}
