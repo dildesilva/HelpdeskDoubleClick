@@ -229,3 +229,10 @@ This simplified guide covers the essential steps to create a basic form in Larav
             return redirect()->back()->with('error', 'Failed to update ticket state: ' . $e->getMessage());
         }
     }
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/dildesilva/HelpdeskDoubleClick.git
+git branch -M main
+git push -u origin main
+                    
